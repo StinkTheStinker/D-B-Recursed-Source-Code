@@ -1,7 +1,7 @@
 **WARNING: SET HXCODEC TO 2.5.1 TO FIX CRASHES WITH EXTRA KEYS WITH LUA SCRIPTS**
 
-# Friday Night Funkin' - JS Engine
-An engine I made for Bambi spamtracks. Used to be called "Psych Engine: No Botplay Lag"
+Dave and Bambi: Recursed Edition | JS Engine
+try js engine out, its cool
 
 ## Installation:
 You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
