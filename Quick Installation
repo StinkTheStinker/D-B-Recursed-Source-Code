@@ -12,5 +12,9 @@ haxelib run flixel-tools setup
 echo Making sure if the HaxeFlixel is up to date right now...
 haxelib update flixel
 echo It's done now, go ahead and head to the "Quick SETUP.bat" file to finish.
+echo Oh wait, I forgot!
+haxelib install hxCodec 2.5.1
+haxelib set hxCodec 2.5.1
+echo There, it's actully done now.
 echo Press any key to exit
 pause >nul
