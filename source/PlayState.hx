@@ -1435,15 +1435,15 @@ class PlayState extends MusicBeatState
 		switch (ClientPrefs.hudType)
 		{
 		case 'Psych Engine':
-			timeTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			timeTxt.setFormat(Paths.font("comic.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			timeTxt.borderSize = 2;
 
 		case 'Leather Engine': 
-			timeTxt.setFormat(Paths.font("vcr.ttf"), 18, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			timeTxt.setFormat(Paths.font("comic.ttf"), 18, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			timeTxt.borderSize = 2;
 
 		case 'JS Engine': 
-			timeTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			timeTxt.setFormat(Paths.font("comic.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			timeTxt.borderSize = 3;
 
 		case 'Tails Gets Trolled V4':
@@ -1451,7 +1451,7 @@ class PlayState extends MusicBeatState
 			timeTxt.borderSize = 2;
 	
 		case 'Kade Engine':
-			timeTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			timeTxt.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			timeTxt.borderSize = 1;
 
 		case 'Dave and Bambi':
@@ -1463,11 +1463,11 @@ class PlayState extends MusicBeatState
 			timeTxt.borderSize = 2;
 
 		case 'VS Impostor':
-			timeTxt.setFormat(Paths.font("vcr.ttf"), 14, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			timeTxt.setFormat(Paths.font("comic.ttf"), 14, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			timeTxt.borderSize = 1;
 
 		case "Mic'd Up":
-			timeTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			timeTxt.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			timeTxt.screenCenter(X);
 			timeTxt.borderSize = 2;
 
@@ -1729,7 +1729,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.hudType == 'Doki Doki+') timePercentTxt.setFormat(Paths.font("Aller_rg.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		if (ClientPrefs.hudType == 'Tails Gets Trolled V4') timePercentTxt.setFormat(Paths.font("calibri.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		if (ClientPrefs.hudType == 'Dave and Bambi') timePercentTxt.setFormat(Paths.font("comic.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		if (ClientPrefs.hudType != 'Dave and Bambi' && ClientPrefs.hudType != 'Tails Gets Trolled V4' && ClientPrefs.hudType != 'Doki Doki+') timePercentTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		if (ClientPrefs.hudType != 'Dave and Bambi' && ClientPrefs.hudType != 'Tails Gets Trolled V4' && ClientPrefs.hudType != 'Doki Doki+') timePercentTxt.setFormat(Paths.font("comic.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		timePercentTxt.scrollFactor.set();
 		timePercentTxt.alpha = 0;
 		timePercentTxt.borderSize = 2;
@@ -1810,7 +1810,7 @@ class PlayState extends MusicBeatState
 		msTxt = new FlxText(0, 0, 0, "");
 		msTxt.cameras = (ClientPrefs.wrongCameras ? [camGame] : [camHUD]);
 		msTxt.scrollFactor.set();
-		msTxt.setFormat("vcr.ttf", 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		msTxt.setFormat("comic.ttf", 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		if (ClientPrefs.hudType == 'Tails Gets Trolled V4') msTxt.setFormat("calibri.ttf", 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		if (ClientPrefs.hudType == 'Dave and Bambi') msTxt.setFormat("comic.ttf", 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		if (ClientPrefs.hudType == 'Doki Doki+') msTxt.setFormat("Aller_rg.ttf", 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -1829,7 +1829,7 @@ class PlayState extends MusicBeatState
 		judgeTxt = new FlxText(400, timeBarBG.y + 120, FlxG.width - 800, "");
 		judgeTxt.cameras = (ClientPrefs.wrongCameras ? [camGame] : [camHUD]);
 		judgeTxt.scrollFactor.set();
-		judgeTxt.setFormat("vcr.ttf", 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		judgeTxt.setFormat("comic.ttf", 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		if (ClientPrefs.hudType == 'Tails Gets Trolled V4') judgeTxt.setFormat("calibri.ttf", 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		if (ClientPrefs.hudType == 'Dave and Bambi') judgeTxt.setFormat("comic.ttf", 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		if (ClientPrefs.hudType == 'Doki Doki+') judgeTxt.setFormat("Aller_rg.ttf", 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -1916,14 +1916,14 @@ class PlayState extends MusicBeatState
 
 		if (ClientPrefs.hudType == 'Kade Engine') {
 			EngineWatermark = new FlxText(4,FlxG.height * 0.9 + 50,0,"", 16);
-			EngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+			EngineWatermark.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 			EngineWatermark.scrollFactor.set();
 			add(EngineWatermark);
 			EngineWatermark.text = SONG.song + " " + CoolUtil.difficultyString() + " |  " + MainMenuState.psychEngineJSVersion;
 		}
 		if (ClientPrefs.hudType == 'JS Engine') {
 			EngineWatermark = new FlxText(4,FlxG.height * 0.1 - 70,0,"", 15);
-			EngineWatermark.setFormat(Paths.font("vcr.ttf"), 18, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+			EngineWatermark.setFormat(Paths.font("comic.ttf"), 18, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 			EngineWatermark.scrollFactor.set();
 			if (ClientPrefs.downScroll) EngineWatermark.y = (FlxG.height * 0.9 + 50);
 			add(EngineWatermark);
@@ -1967,7 +1967,7 @@ class PlayState extends MusicBeatState
 
 		if (ClientPrefs.showcaseMode && !ClientPrefs.charsAndBG) {
 			hitTxt = new FlxText(0, 20, 10000, "test", 42);
-			hitTxt.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			hitTxt.setFormat(Paths.font("comic.ttf"), 42, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			hitTxt.scrollFactor.set();
 			hitTxt.borderSize = 2;
 			hitTxt.visible = true;
@@ -1986,7 +1986,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.hudType == 'Kade Engine')
 		{ 		
 			scoreTxt = new FlxText(0, healthBarBG.y + 50, FlxG.width, "", 20);
-			scoreTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+			scoreTxt.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 			scoreTxt.scrollFactor.set();
 			scoreTxt.borderSize = 1;
 			scoreTxt.visible = !ClientPrefs.hideHud || !ClientPrefs.showcaseMode;
@@ -1995,7 +1995,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.hudType == 'JS Engine')
 		{ 		
 			scoreTxt = new FlxText(0, healthBarBG.y + 50, FlxG.width, "", 20);
-			scoreTxt.setFormat(Paths.font("vcr.ttf"), 18, FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]), CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			scoreTxt.setFormat(Paths.font("comic.ttf"), 18, FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]), CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			scoreTxt.scrollFactor.set();
 			scoreTxt.borderSize = 2;
 			scoreTxt.visible = !ClientPrefs.hideHud || !ClientPrefs.showcaseMode;
@@ -2006,7 +2006,7 @@ class PlayState extends MusicBeatState
 			scoreTxt = new FlxText(healthBarBG.x - (healthBarBG.width / 2), healthBarBG.y - 26, 0, "", 20);
 			if (ClientPrefs.downScroll)
 				scoreTxt.y = healthBarBG.y + 18;
-			scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, RIGHT);
+			scoreTxt.setFormat(Paths.font("comic.ttf"), 20, FlxColor.WHITE, RIGHT);
 			scoreTxt.setBorderStyle(OUTLINE, 0xFF000000, 3, 1);
 			scoreTxt.scrollFactor.set();
 			add(scoreTxt);
@@ -2015,7 +2015,7 @@ class PlayState extends MusicBeatState
 			missTxt = new FlxText(scoreTxt.x, scoreTxt.y - 26, 0, "", 20);
 			if (ClientPrefs.downScroll)
 				missTxt.y = scoreTxt.y + 26;
-			missTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, RIGHT);
+			missTxt.setFormat(Paths.font("comic.ttf"), 20, FlxColor.WHITE, RIGHT);
 			missTxt.setBorderStyle(OUTLINE, 0xFF000000, 3, 1);
 			missTxt.scrollFactor.set();
 			add(missTxt);
@@ -2024,7 +2024,7 @@ class PlayState extends MusicBeatState
 			accuracyTxt = new FlxText(missTxt.x, missTxt.y - 26, 0, "", 20);
 			if (ClientPrefs.downScroll)
 				accuracyTxt.y = missTxt.y + 26;
-			accuracyTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, RIGHT);
+			accuracyTxt.setFormat(Paths.font("comic.ttf"), 20, FlxColor.WHITE, RIGHT);
 			accuracyTxt.setBorderStyle(OUTLINE, 0xFF000000, 3, 1);
 			accuracyTxt.scrollFactor.set();
 			add(accuracyTxt);
@@ -2033,7 +2033,7 @@ class PlayState extends MusicBeatState
 			comboTxt = new FlxText(scoreTxt.x, scoreTxt.y + 26, 0, "", 21);
 			if (ClientPrefs.downScroll)
 				comboTxt.y = scoreTxt.y - 26;
-			comboTxt.setFormat(Paths.font("vcr.ttf"), 21, FlxColor.WHITE, RIGHT);
+			comboTxt.setFormat(Paths.font("comic.ttf"), 21, FlxColor.WHITE, RIGHT);
 			comboTxt.setBorderStyle(OUTLINE, 0xFF000000, 3, 1);
 			comboTxt.scrollFactor.set();
 			add(comboTxt);
@@ -2042,7 +2042,7 @@ class PlayState extends MusicBeatState
 			npsTxt = new FlxText(accuracyTxt.x, accuracyTxt.y - 46, 0, "", 20);
 			if (ClientPrefs.downScroll)
 				npsTxt.y = accuracyTxt.y + 46;
-			npsTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, RIGHT);
+			npsTxt.setFormat(Paths.font("comic.ttf"), 20, FlxColor.WHITE, RIGHT);
 			npsTxt.setBorderStyle(OUTLINE, 0xFF000000, 3, 1);
 			npsTxt.scrollFactor.set();
 			add(npsTxt);
@@ -2098,7 +2098,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.hudType == 'Leather Engine')
 		{ 		
 			scoreTxt = new FlxText(0, healthBarBG.y + 50, FlxG.width, "", 20);
-			scoreTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+			scoreTxt.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 			scoreTxt.scrollFactor.set();
 			scoreTxt.borderSize = 1;
 			scoreTxt.visible = !ClientPrefs.hideHud || !ClientPrefs.showcaseMode;
@@ -2116,7 +2116,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.hudType == 'Psych Engine') 
 		{
 			scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
-			scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			scoreTxt.setFormat(Paths.font("comic.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			scoreTxt.scrollFactor.set();
 			scoreTxt.borderSize = 1.25;
 			scoreTxt.visible = !ClientPrefs.hideHud || !ClientPrefs.showcaseMode;
@@ -2144,7 +2144,7 @@ class PlayState extends MusicBeatState
 		{
 			scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
 			scoreTxt.scrollFactor.set();
-			scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]), CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			scoreTxt.setFormat(Paths.font("comic.ttf"), 20, FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]), CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			scoreTxt.scrollFactor.set();
 			scoreTxt.borderSize = 1.25;
 			scoreTxt.visible = !ClientPrefs.hideHud || !ClientPrefs.showcaseMode;
@@ -2177,7 +2177,7 @@ class PlayState extends MusicBeatState
 		if (!ClientPrefs.hideScore) updateScore();
 
 		judgementCounter = new FlxText(0, FlxG.height / 2 - (ClientPrefs.hudType != 'Box Funkin' || ClientPrefs.hudType != "Mic'd Up" ? 80 : 350), 0, "", 20);
-		judgementCounter.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		judgementCounter.setFormat(Paths.font("comic.ttf"), 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		if (ClientPrefs.hudType == 'Box Funkin') judgementCounter.setFormat(Paths.font("MilkyNice.ttf"), 21, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		judgementCounter.borderSize = 2;
 		judgementCounter.scrollFactor.set();
@@ -2188,7 +2188,7 @@ class PlayState extends MusicBeatState
 		pauseWarnText = new FlxText(400,  FlxG.height / 2 - 20, 0, "Pausing is disabled! Turn it back on in Settings -> Gameplay -> 'Force Disable Pausing'", 16);
 		pauseWarnText.cameras = [camHUD];
 		pauseWarnText.scrollFactor.set();
-		pauseWarnText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		pauseWarnText.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		pauseWarnText.borderSize = 1.25;
 		pauseWarnText.x += 20;
 		pauseWarnText.y -= 25;
@@ -2197,7 +2197,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.hudType == 'Psych Engine')
 		{
 			botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
-			botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			botplayTxt.setFormat(Paths.font("comic.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			botplayTxt.scrollFactor.set();
 			botplayTxt.borderSize = 1.25;
 			botplayTxt.visible = cpuControlled && !ClientPrefs.showcaseMode;
@@ -2208,7 +2208,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.hudType == 'JS Engine')
 		{
 			botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "Botplay Mode", 30);
-			botplayTxt.setFormat(Paths.font("vcr.ttf"), 30, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			botplayTxt.setFormat(Paths.font("comic.ttf"), 30, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			botplayTxt.scrollFactor.set();
 			botplayTxt.borderSize = 1.5;
 			botplayTxt.visible = cpuControlled && !ClientPrefs.showcaseMode;
@@ -2219,7 +2219,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.hudType == 'Box Funkin')
 		{
 			botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
-			botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			botplayTxt.setFormat(Paths.font("comic.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			botplayTxt.scrollFactor.set();
 			botplayTxt.borderSize = 1.25;
 			botplayTxt.visible = cpuControlled && !ClientPrefs.showcaseMode;
@@ -2230,7 +2230,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.hudType == "Mic'd Up")
 		{
 			botplayTxt = new FlxText((healthBarBG.width / 2), healthBar.y, 0, "AutoPlayCPU", 20);
-			botplayTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			botplayTxt.setFormat(Paths.font("comic.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			botplayTxt.scrollFactor.set();
 			botplayTxt.screenCenter(X);
 			botplayTxt.borderSize = 3;
@@ -2242,7 +2242,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.hudType == 'Kade Engine')
 		{
 			botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
-			botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			botplayTxt.setFormat(Paths.font("comic.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			botplayTxt.scrollFactor.set();
 			botplayTxt.borderSize = 1.25;
 			botplayTxt.visible = cpuControlled && !ClientPrefs.showcaseMode;
@@ -2286,7 +2286,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.hudType == 'VS Impostor')
 		{
 			botplayTxt = new FlxText(400, healthBarBG.y - 55, FlxG.width - 800, "BOTPLAY", 32);
-			botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]), CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			botplayTxt.setFormat(Paths.font("comic.ttf"), 32, FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]), CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			botplayTxt.scrollFactor.set();
 			botplayTxt.borderSize = 1.25;
 			botplayTxt.visible = cpuControlled && !ClientPrefs.showcaseMode;

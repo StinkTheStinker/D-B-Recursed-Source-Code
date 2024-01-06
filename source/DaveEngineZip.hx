@@ -8,7 +8,7 @@ import sys.FileSystem;
 
 using StringTools;
 
-class JSEZip
+class DaveEngineZip
 {
 	public static function unzip(_path:String, _dest:String, ignoreRootFolder:String = "")
 	{

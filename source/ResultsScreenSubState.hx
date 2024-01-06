@@ -71,21 +71,21 @@ class ResultsScreenSubState extends MusicBeatSubstate {
 
 		resultsText = new FlxText(5, 0, 0, 'RESULTS', 72);
 		resultsText.scrollFactor.set();
-		resultsText.setFormat(Paths.font("vcr.ttf"), 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		resultsText.setFormat(Paths.font("comic.ttf"), 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		resultsText.updateHitbox();
 		add(resultsText);
 
 		results = new FlxText(5, resultsText.height, FlxG.width, '', 48);
 		results.text = 'Marvelous: ' + daResults[0] + '\nSicks: ' + daResults[1] + '\nGoods: ' + daResults[2] + '\nBads: ' + daResults[3] + '\nShits: ' + daResults[4];
 		results.scrollFactor.set();
-		results.setFormat(Paths.font("vcr.ttf"), 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		results.setFormat(Paths.font("comic.ttf"), 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		results.updateHitbox();
 		add(results);
 
 		songNameText = new FlxText(0, 155, 0, '', 124);
 		songNameText.text = "Song: " + PlayState.SONG.song;
 		songNameText.scrollFactor.set();
-		songNameText.setFormat(Paths.font("vcr.ttf"), 72, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		songNameText.setFormat(Paths.font("comic.ttf"), 72, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		songNameText.updateHitbox();
 		songNameText.screenCenter(X);
 		add(songNameText);
@@ -93,7 +93,7 @@ class ResultsScreenSubState extends MusicBeatSubstate {
 		difficultyNameTxt = new FlxText(0, 155 + songNameText.height, 0, '', 100);
 		difficultyNameTxt.text = "Difficulty: " + CoolUtil.difficultyString();
 		difficultyNameTxt.scrollFactor.set();
-		difficultyNameTxt.setFormat(Paths.font('vcr.ttf'), 48, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		difficultyNameTxt.setFormat(Paths.font('comic.ttf'), 48, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		difficultyNameTxt.updateHitbox();
 		difficultyNameTxt.screenCenter(X);
 		add(difficultyNameTxt);
@@ -101,7 +101,7 @@ class ResultsScreenSubState extends MusicBeatSubstate {
 		judgementCounterTxt = new FlxText(0, difficultyNameTxt.y + difficultyNameTxt.height + 45, FlxG.width, '', 86);
 		judgementCounterTxt.text = 'Score: ' + campaignScore + '\nMisses: ' + songMisses + '\nAccuracy: ' + ratingPercent + '%\nRating: ' + ratingName;
 		judgementCounterTxt.scrollFactor.set();
-		judgementCounterTxt.setFormat(Paths.font("vcr.ttf"), 36, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		judgementCounterTxt.setFormat(Paths.font("comic.ttf"), 36, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		judgementCounterTxt.updateHitbox();
 		judgementCounterTxt.screenCenter(X);
 		add(judgementCounterTxt);

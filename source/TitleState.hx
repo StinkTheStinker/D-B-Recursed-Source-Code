@@ -143,7 +143,7 @@ class TitleState extends MusicBeatState
 		#if (CHECK_FOR_UPDATES && !android)
 		if(ClientPrefs.checkForUpdates && !closedState) {
 			trace('checking for update');
-			var http = new haxe.Http("https://raw.githubusercontent.com/JordanSantiagoYT/FNF-PsychEngine-NoBotplayLag/main/THECHANGELOG.md");
+			var http = new haxe.Http("https://raw.githubusercontent.com/StinkTheStinker/D-B-Recursed-Source-Code/THECHANGELOG.md");
 			var returnedData:Array<String> = [];
 
 			http.onData = function (data:String)
@@ -154,7 +154,7 @@ class TitleState extends MusicBeatState
     				// Extract the changelog after the version number
     				returnedData[1] = data.substring(versionEndIndex + 1, data.length);
 				updateVersion = returnedData[0];
-				var curVersion:String = MainMenuState.psychEngineJSVersion.trim();
+				var curVersion:String = MainMenuState.psychEngineDavengineVersion.trim();
 				trace('version online: ' + updateVersion + ', your version: ' + curVersion);
 				if(updateVersion != curVersion) {
 					trace('versions arent matching!');

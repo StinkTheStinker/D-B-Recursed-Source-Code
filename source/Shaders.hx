@@ -444,9 +444,9 @@ class Grain extends FlxShader
 	
 }
 
-class VCRDistortionEffect extends Effect
+class COMICDistortionEffect extends Effect
 {
-  public var shader:VCRDistortionShader = new VCRDistortionShader();
+  public var shader:COMICDistortionShader = new COMICDistortionShader();
   public function new(glitchFactor:Float,distortion:Bool=true,perspectiveOn:Bool=true,vignetteMoving:Bool=true){
     shader.iTime.value = [0];
     shader.vignetteOn.value = [true];
@@ -491,7 +491,7 @@ class VCRDistortionEffect extends Effect
   }
 }
 
-class VCRDistortionShader extends FlxShader // https://www.shadertoy.com/view/ldjGzV and https://www.shadertoy.com/view/Ms23DR and https://www.shadertoy.com/view/MsXGD4 and https://www.shadertoy.com/view/Xtccz4
+class COMICDistortionShader extends FlxShader // https://www.shadertoy.com/view/ldjGzV and https://www.shadertoy.com/view/Ms23DR and https://www.shadertoy.com/view/MsXGD4 and https://www.shadertoy.com/view/Xtccz4
 {
 
   @:glFragmentSource('
