@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://rwr2m8x6n4eu"
-path="res://.godot/imported/vcr.ttf-fff7548ca8ff5f09efe0552b38eb50dc.fontdata"
+uid="uid://8ort8vd6w3px"
+path="res://.godot/imported/calibri.ttf-8a4842e0f4f5d3f211876b4574b01e10.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/vcr.ttf"
-dest_files=["res://.godot/imported/vcr.ttf-fff7548ca8ff5f09efe0552b38eb50dc.fontdata"]
+source_file="res://assets/fonts/calibri.ttf"
+dest_files=["res://.godot/imported/calibri.ttf-8a4842e0f4f5d3f211876b4574b01e10.fontdata"]
 
 [params]
 
