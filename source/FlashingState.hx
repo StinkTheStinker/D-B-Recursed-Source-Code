@@ -45,7 +45,7 @@ class FlashingState extends MusicBeatState
 			You've been warned!",
 			32);
 		#end
-		warnText.setFormat("COMIC OSD Mono", 32, FlxColor.WHITE, CENTER);
+		warnText.setFormat("Comic Sans MS Bold", 32, FlxColor.WHITE, CENTER);
 		warnText.screenCenter(Y);
 		add(warnText);
 

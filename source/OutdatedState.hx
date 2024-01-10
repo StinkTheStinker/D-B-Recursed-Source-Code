@@ -63,22 +63,22 @@ class OutdatedState extends MusicBeatState
 			32);
 		#else
 		warnText = new FlxText(0, 10, FlxG.width,
-			"HEY! Your JS Engine is outdated!\n"
+			"the engine is outdated lol\n"
 			+ 'v' + MainMenuState.psychEngineJSVersion + ' < v' + TitleState.updateVersion + '\n'
 			,32);
-		warnText.setFormat("COMIC OSD Mono", 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		warnText.setFormat("Comic Sans MS Bold", 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		warnText.screenCenter(X);
 		add(warnText);
 
 		changelog = new FlxText(100, warnText.y + warnText.height + 20, 1080, currChanges, 16);
-		changelog.setFormat(Paths.font("comic.ttf"), Std.int(16), FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		changelog.setFormat(Paths.font("vcr.ttf"), Std.int(16), FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(changelog);
 		#end
 
 		updateText = new FlxText(0, 10, FlxG.width,
-			"Press SPACE to view the full changelog, ENTER to update or ESCAPE to ignore this!"
+			"Press SPACE to view the full changelog, ENTER to update or ESCAPE to ignore this!/nNote from stink: just press esc"
 			,24);
-		updateText.setFormat("COMIC OSD Mono", 24, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		updateText.setFormat("Comic Sans MS Bold", 24, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			updateText.y = 710 - updateText.height;
 			updateText.x = 10;
 		add(updateText);
